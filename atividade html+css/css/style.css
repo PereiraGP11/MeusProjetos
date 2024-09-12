@@ -1,0 +1,56 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(8, 35, 51);
+  color: crimson;
+}
+
+.container{
+  display: flex; /*O Flex significa que tudo que tiver dentro, pode estar em qualquer lugar*/
+  flex-wrap: wrap;
+  justify-content: space-around; /*faz deixar espaços entre as divs*/
+  margin-top: 20px;
+  
+}
+
+.profissoes{
+  text-align: center;
+  margin: 10px; /*margem de uma pra outra*/
+  background-color: rgb(201, 67, 5); /*cor do fundo da div*/
+  border: 3px inset rgb(194, 6, 6);
+  color: rgb(19, 3, 78); 
+  border-radius: 20px; /*arrendondamento da borda*/
+  padding: 9px; /*espaço interno*/
+  box-shadow: 20px 5px 20px rgba(151, 27, 5, 0.877);
+}
+
+h1{
+  text-align: center;
+  color: rgb(204, 46, 6);
+}
+  
+a{
+  text-decoration: none;
+}
+
+.configuracao{
+  text-align: center;
+  color: aqua;
+}
+
+.borda{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 1px;
+  padding: 1px;
+  border: 3px inset rgb(202, 66, 3);
+  border-radius: 20px;
+  box-shadow: 20px 5px 20px rgb(146, 48, 2);
+  justify-content: space-around;
+}
+
+.imagem{
+  margin: 420px;
+  padding: 40px;
+  margin-top: 10px;
+}
