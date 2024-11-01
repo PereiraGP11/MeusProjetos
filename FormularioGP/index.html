@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/javinha.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Cadastro</h2>
+        <form action="/submit" method="post">
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            
+            <label for="confirmacao_senha">Confirmação de Senha:</label>
+            <input type="password" id="confirmacao_senha" name="confirmacao_senha" placeholder="Confirmação de Senha" required>
+            
+            <label>Gênero:</label>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+                
+                <input type="radio" id="feminino" name="genero" value="Feminino">
+                <label for="feminino">Feminino</label>
+                
+                <input type="radio" id="outro" name="genero" value="Outro">
+                <label for="outro">Outro</label>
+            </div>
+           
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <div class="select-group">
+                <input type="date" id="data_nascimento" name="data_nascimento" required>       
+            </div>
+           
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="" disabled selected>Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option> 
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option> 
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>               
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option> 
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+           
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" name="cidade" required>
+                <option value="" disabled selected>Selecione sua cidade</option>
+                <option value="Rio_Branco">Rio Branco</option>
+                <option value="Maceio">Maceió</option>
+                <option value="Macapa">Macapá</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Brasilia">Brasília</option>
+                <option value="Vitoria">Vitória</option>
+                <option value="Goiania">Goiânia</option>
+                <option value="Sao_Luis">São Luís</option>
+                <option value="Cuiaba">Cuiabá</option>
+                <option value="Campo_Grande">Campo Grande</option>
+                <option value="Belo_Horizonte">Belo Horizonte</option>
+                <option value="Belem">Belém</option>
+                <option value="Joao_Pessoa">João Pessoa</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Recife">Recife</option>
+                <option value="Teresina">Teresina</option>
+                <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+                <option value="Natal">Natal</option>
+                <option value="Porto_Alegre">Porto Alegre</option>
+                <option value="Porto_Velho">Porto Velho</option>
+                <option value="Boa_Vista">Boa Vista</option>
+                <option value="Santa_Catarina">Santa Catarina</option>
+                <option value="Sao_Paulo">São Paulo</option>                                   
+                <option value="Aracaju">Aracaju</option>
+                <option value="Palmas">Palmas</option>
+            </select>
+            
+            <label for="descricao">Descrição Pessoal:</label>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Escreva um pouco sobre você..."></textarea>
+           
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
