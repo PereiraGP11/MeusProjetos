@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca - Numismática</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    
+    .image-container img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 10px;
+      border: 3px solid rgb(0, 0, 0);
+    }
+
+    
+    .image-container p {
+      font-size: 14px;
+      color: black;
+      margin: 0;
+      max-width: 400px;
+      text-align: justify;
+      background-color: rgb(255, 255, 255);
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    
+    .image-container:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    .image-container:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(99, 57, 23);
+    }
+
+    .tudinho {
+      background-color: rgb(146, 85, 28);
+      margin: auto;
+      max-width: 2000px;
+      padding: 10px;
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 3px; 
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 500px;
+      margin-right: 500px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+    background-color: rgb(146, 85, 28);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 10px;
+    }
+
+    footer{
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 0;
+  background-color: rgb(146, 85, 28);
+  color: white;
+  max-width: 100%;
+}
+
+.voltar{
+  color: inherit;
+  text-decoration: none;
+}
+
+.voltar:hover{
+  color: rgb(0, 0, 0);
+}
+
+  </style>
+</head>
+<body>
+  <header class="bibi animate__animated animate__backInRight">
+    <h2>Biblioteca de Imagens</h2>
+  </header>
+  <div class="tudinho animate__animated animate__fadeInUpBig">
+    <div class="image-container">
+      <img src="img/moeda1.jpg" alt="Descrição da imagem 1">
+      <p>Em 2015, foi lançada uma moeda em homenagem aos 50 anos da fundação do Banco Central. No total, 50 peças foram postas em circulação. Uma unidade, que traz o prédio da instituição em Brasília no anverso, pode chegar a R$ 800 nos casos em que tenha o reverso invertido.</p>
+    </div>
+     
+    <div class="image-container">
+      <img src="img/moeda2.webp" alt="Descrição da imagem 2">
+      <p>Moeda de 1 real do 40º aniversário do Banco Central (2005) Esta moeda foi lançada para comemorar os 40 anos do Banco Central do Brasil, com uma tiragem de 40 milhões de unidades. Mesmo ainda podendo ser encontrada em circulação, moedas em excelente estado podem ser vendidas por até R$ 100.</p>
+    </div>
+     
+    <div class="image-container">
+      <img src="img/moedas3.webp" alt="Descrição da imagem 3">
+      <p>A moeda de 1 real das Olimpíadas do Rio de Janeiro de 2016 pode valer muito mais do que o seu valor original, podendo chegar a ser vendida por até R$ 200. Isso acontece porque elas são comemorativas, têm características únicas e são desejadas por colecionadores.</p>
+    </div>
+     
+    <div class="image-container">
+      <img src="img/moedas4.jpg" alt="Descrição da imagem 4">
+      <p>Real (plural réis) foi a unidade monetária utilizada no Brasil desde sua colonização até 5 de outubro de 1942, quando foi substituída pelo cruzeiro na razão de 1 cruzeiro por 1 mil-réis. </p>
+    </div>
+     
+    <div class="image-container">
+      <img src="img/moedas5.webp" alt="Descrição da imagem 5">
+      <p>A moeda de um centavo de real (R$ 0,01) começou a ser emitida em 1994, quando do lançamento do padrão por ocasião do Plano Real, sendo que quatro anos depois, ela foi reestilizada e emitida com coloração diferente da então usada.</p>
+    </div>
+  
+    <div class="image-container">
+      <img src="img/moedas6.gif" alt="Descrição da imagem 6">
+      <p>A moeda de 10 centavos lançada em 1995, que comemorava os 50 anos da Food and Agriculture Organization (FAO), se tornou uma moeda rara almejada pelos colecionadores.</p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Numismática Online</p>
+    <a class="voltar" href="index.html">Volte ao Início</a>
+</footer>
+</body>
+</html>

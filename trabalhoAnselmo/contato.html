@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Numismática</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+      *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background: rgb(99, 57, 23);
+  color: black;
+  margin: auto;
+}
+
+.container{
+  background-color: rgb(146, 85, 28);
+  border-radius: 14px;
+  margin: 100px 700px 100px 700px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header{
+  background-color: rgb(165, 165, 165);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+header h2{
+  background-color: rgb(146, 85, 28);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px;
+  margin: 10px 10px 10px 10px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.form{
+  padding: 18px;
+}
+
+.form-content{
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.form-content label{
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.form-content input{
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.form-content span{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-content button{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.form button{
+  background-color: rgb(165, 165, 165);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 2px solid rgb(5, 5, 5);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.form-content.error input{
+  border-color: #ff3b25; 
+}
+
+.form-content.error span{
+  color: #ff3b25;
+  visibility: visible;
+} 
+
+.mostruario{
+  background-color: rgb(165, 165, 165);
+  margin: 100px 700px 100px 700px;
+  box-sizing: border-box;
+  position: relative;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.mostruario h3{
+  text-align: center;
+  color: white;
+  padding: 2px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.info{
+  background-color: rgb(255, 255, 255);
+}
+
+.telefone i, .arroba i, .locali i {
+    text-align: left;
+    margin-right: 15px;
+    vertical-align: middle; 
+}
+
+footer{
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  margin-top: 200px;
+  padding: 30px;
+  background-color: rgb(146, 85, 28);
+  color: white;
+}
+
+.voltar{
+  color: inherit;
+  text-decoration: none;
+}
+
+.voltar:hover{
+  color: rgb(0, 0, 0);
+}
+
+    </style>
+</head>
+<body>
+  <header class="col animate__animated animate__backInRight">
+    <h2>Contato</h2>
+  </header>
+    <div class="mostruario animate__animated animate__fadeInTopLeft">
+      <h3>CONTATO</h3>
+    </br>
+    <div class="info">
+        <p class="telefone">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <i class="material-icons">&#xe0b0;</i> Telefone: 11 91234-5678  
+        </p>
+        <p class="arroba">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <i style="font-size:24px" class="fa">&#xf199;</i> gabrielpereira@email.com
+        </p>
+        <p class="locali">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <i style="font-size:24px" class="fa">&#xf278;</i> Rua São João da Conceição, 333 - Jardim dos Céus-RJ
+        </p>
+      </div>
+    </div>
+
+    <div class="container animate__animated animate__fadeInBottomRight">
+        <section class="header">
+            <h2>Entre em Contato - Cadastra-se</h2>
+        </section>
+
+        <form id="form" class="form">
+            <div class="form-content">
+                <label for="username">Nome do Usuário</label>
+                <input type="text" id="username" placeholder="Digite o nome do usuario..."/>
+                <span>Aqui vai a mensagem de erro.....</span>
+            </div>
+
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite o seu email..."/>
+                <span>Aqui vai a mensagem de erro.....</span>
+            </div>
+
+            <div class="form-content">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite a sua senha..."/>
+                <span>Aqui vai a mensagem de erro.....</span>
+            </div>
+
+            <div class="form-content">
+                <label for="password-confirmation">Confirmação de Senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite a sua senha novamente..."/>
+                <span>Aqui vai a mensagem de erro.....</span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+    </div>
+    <script src="javas/javinha.js"></script>
+    <footer>
+      <p>© 2024 Numismática Online</p>
+    </br>
+      <a class="voltar" href="index.html">Volte ao Início</a>
+  </footer>
+</body>
+</html>
